@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/conlayout"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginBottom="331dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_thoigian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:text="00:00,00"
+            android:textSize="60dp"
+            app:layout_constraintEnd_toEndOf="@+id/conlayout"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="@+id/conlayout"
+            app:layout_constraintTop_toTopOf="@+id/conlayout" />
+
+        <Button
+            android:id="@+id/bnt_datlai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:text="Đặt lại"
+            app:layout_constraintBottom_toBottomOf="@+id/conlayout"
+            app:layout_constraintStart_toStartOf="@+id/conlayout"
+            app:layout_constraintTop_toTopOf="@+id/conlayout"
+            app:layout_constraintVertical_bias="0.718" />
+
+        <Button
+            android:id="@+id/btn_batdau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:text="Bắt đầu"
+            app:layout_constraintBottom_toBottomOf="@+id/conlayout"
+            app:layout_constraintEnd_toEndOf="@+id/conlayout"
+            app:layout_constraintTop_toTopOf="@+id/conlayout"
+            app:layout_constraintVertical_bias="0.718" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conlayout">
+
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
